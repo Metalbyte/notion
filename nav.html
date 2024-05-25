@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="dashboard" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Dashboard</a>
+		<a id="bookmarks" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bookmark"></i> Bookmarks</a>
+		<a id="mental-health" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-brain"></i> Mental Health</a>
+		<a id="finance" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-coins"></i> Finance</a>
+		<a id="additiona-memory" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-memory"></i> Additional Memory</a>
+		<a id="research" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book-open-reader"></i> Research</a>
+		<a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-note-sticky"></i> Notes</a>
+		<a id="recipe-book" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-utensils"></i> Recipe Book</a>
+		<a id="hobbies" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i></i> Hobbies</a>
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'dashboard')
+				window.open("https://www.notion.so/metalbyte/Dashboard-c457427e4a714e1f83948d02a0d31f11?pvs=4", '_blank').focus();
+			else if (id == "bookmarks")
+				window.open("https://www.notion.so/metalbyte/Bookmarks-3988f79711af430ab6945fcef9f8314c?pvs=4", '_blank').focus();
+			else if (id == "mental-health")
+				window.open("https://www.notion.so/metalbyte/Mental-Health-5b0f64e19f0c44e683f100cac021c1d7?pvs=4", '_blank').focus();
+			else if (id == "finance")
+				window.open("https://www.notion.so/metalbyte/My-Finances-Pages-d8359e7965fa45838e8b01a89e154cf0?pvs=4", '_blank').focus();
+			else if (id == "additional-memory")
+				window.open("https://www.notion.so/metalbyte/My-Additional-Memory-9947d9ca705f4e5aa9e8b0dee8abdc13?pvs=4", '_blank').focus();
+			else if (id == "research")
+				window.open("https://www.notion.so/metalbyte/Research-8b44945582004568981f94d42ad12adb?pvs=4", '_blank').focus();
+			else if (id == "notes")
+				window.open("https://www.notion.so/metalbyte/Notes-6a1f41a4886b43b8acaceefc8d430243?pvs=4", '_blank').focus();
+			else if (id == "recipe-book")
+				window.open("https://www.notion.so/metalbyte/Recipe-Book-8426b6672e404356824fb3213daa644f?pvs=4", '_blank').focus();
+			else if (id == "hobbies")
+				window.open("https://www.notion.so/metalbyte/Hobbies-8183ccf249e14e5ab38553e39e205775?pvs=4", '_blank').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
